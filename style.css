@@ -1,0 +1,84 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    height: 100vh;
+    margin: 0%;
+}
+.top{
+    background-color: #1f2937;
+}
+.header{
+    color: azure;
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+}
+.content{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+/* unorderded list*/
+ul{
+    list-style-type: none; /*removes bullet points*/
+    display: flex;
+    gap: 16px;
+}
+
+a{
+    text-decoration: none;
+    color: azure;
+}
+.hero{
+    color: white;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-around;
+}
+/*this is the container holding the 4 pictures*/
+.illustration-container{
+    display: flex;
+    justify-content: space-between;
+}
+/*this is the container for each picture and its subtitle */
+.illustration{
+    display: flex;
+    flex-direction: column;
+}
+.illustration img {
+    border-style: solid;
+    border-color: #3882f6;
+    border-width: 4px;
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+}
+.illustration p{
+    text-align: center;
+}
+button{
+    background-color: #3882f6;
+    color: azure;
+}
+img{
+    width: 400px;
+}
+.testimonial{
+    background-color: #E5E7EB;
+    padding: 32px;
+    font-size: 36px;
+    color: #1f2937;
+}
+.advertising{
+    background-color: #3882f6;
+    border-style: solid;
+    display: flex;
+}
+.footer{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
