@@ -14,6 +14,7 @@ body{
     justify-content: space-between;
     font-size: 24px;
 }
+/* this is the container for the .info , .testimonial, and . advertising */
 .content{
     display: flex;
     flex: 1;
@@ -41,13 +42,18 @@ a{
 /*this is the container holding the 4 pictures*/
 .illustration-container{
     display: flex;
-    justify-content: space-between;
+    /* ensures that illustrations wrap when the container is too small*/
+    flex-wrap: wrap;
 }
 /*this is the container for each picture and its subtitle */
 .illustration{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 200px;
+    margin: 20px;
 }
+/*this is the selector all img in illustration*/
 .illustration img {
     border-style: solid;
     border-color: #3882f6;
@@ -58,6 +64,8 @@ a{
 }
 .illustration p{
     text-align: center;
+    /*ensures words do not overflow the set width*/
+    word-wrap: break-word;
 }
 button{
     background-color: #3882f6;
