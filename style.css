@@ -81,6 +81,7 @@ img{
     padding: 32px;
     font-size: 36px;
     color: #1f2937;
+    justify-content: center;
     /* this is from chat gpt ---- */
     /*The width ensure that .testimonial takes full width if not already
     align self stretch will overrride align-items for .testimonial
@@ -91,8 +92,9 @@ img{
 }
 .testimonial p{
     word-wrap: break-word;
-    text-align: center;/*aligns the text in the center*/
-    padding: 10px 150px 10px 150px;
+    /*
+    text-align: center;/*aligns the text in the center
+    padding: 10px 150px 10px 150px;*/
 }
 .advertising{
     background-color: #3882f6;
