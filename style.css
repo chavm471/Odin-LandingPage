@@ -13,6 +13,8 @@ body{
     display: flex;
     justify-content: space-between;
     font-size: 24px;
+    margin-left: 75px;
+    margin-right: 75px;
 }
 /* this is the container for the .info , .testimonial, and . advertising */
 .content{
@@ -58,7 +60,7 @@ a{
     border-style: solid;
     border-color: #3882f6;
     border-width: 4px;
-    border-radius: 5px;
+    border-radius: 10px;
     width: 200px;
     height: 200px;
 }
@@ -79,14 +81,50 @@ img{
     padding: 32px;
     font-size: 36px;
     color: #1f2937;
+    /* this is from chat gpt ---- */
+    /*The width ensure that .testimonial takes full width if not already
+    align self stretch will overrride align-items for .testimonial
+    */
+    width: 100%;
+    /*align-self: center; if i have this on 
+    /*---*/
+}
+.testimonial p{
+    word-wrap: break-word;
+    text-align: center;/*aligns the text in the center*/
+    padding: 10px 150px 10px 150px;
 }
 .advertising{
     background-color: #3882f6;
     border-style: solid;
+    border-radius: 10px;
     display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    margin: 40px;
+    width: 50%;
+    height: 70px;
 }
+.ad-info{
+   display: flex;
+   flex-direction: column;
+   color: azure;
+}
+.ad-info h3{
+   font-size: 25px;
+   margin: 0%;
+}
+.ad-info p{
+    font-size: 25px;
+    margin: 0%;
+}
+/* for this section to */
 .footer{
+    background-color: #1f2937;
+    color: azure;
     display: flex;
     align-self: center;
-    justify-self: center;
+    justify-content: center; /*this aligns the content*/
+    width: 100%;
+    padding: 20px
 }
