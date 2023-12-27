@@ -16,14 +16,6 @@ body{
     margin-left: 75px;
     margin-right: 75px;
 }
-/* this is the container for the .info , .testimonial, and . advertising */
-.content{
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
 /* unorderded list*/
 ul{
     list-style-type: none; /*removes bullet points*/
@@ -40,6 +32,16 @@ a{
     font-weight: bolder;
     display: flex;
     justify-content: space-around;
+    padding: 50px;
+}
+
+/* this is the container for the .info , .testimonial, and . advertising */
+.content{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 /*this is the container holding the 4 pictures*/
 .illustration-container{
@@ -72,6 +74,13 @@ a{
 button{
     background-color: #3882f6;
     color: azure;
+    border-radius: 10px;
+    width: 120px;
+    height: 40px;
+    color: beige;
+    border-style: solid;
+    border-color: #3882f6;
+
 }
 img{
     width: 400px;
@@ -80,8 +89,8 @@ img{
     background-color: #E5E7EB;
     padding: 32px;
     font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
     color: #1f2937;
-    justify-content: center;
     /* this is from chat gpt ---- */
     /*The width ensure that .testimonial takes full width if not already
     align self stretch will overrride align-items for .testimonial
@@ -92,14 +101,14 @@ img{
 }
 .testimonial p{
     word-wrap: break-word;
-    /*
-    text-align: center;/*aligns the text in the center
-    padding: 10px 150px 10px 150px;*/
+    text-align: center;/*aligns the text in the center*/
+    padding: 10px 150px 10px 150px;
 }
 .advertising{
     background-color: #3882f6;
     border-style: solid;
     border-radius: 10px;
+    border-color: #3882f6;
     display: flex;
     justify-content: space-between;
     padding: 50px;
@@ -119,6 +128,9 @@ img{
 .ad-info p{
     font-size: 25px;
     margin: 0%;
+}
+.advertising button{
+    border-color: azure;
 }
 /* for this section to */
 .footer{
